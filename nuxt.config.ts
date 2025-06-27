@@ -10,6 +10,10 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
+  routeRules: {
+    "/": { redirect: "/dashboard" },
+  },
+
   modules: ["shadcn-nuxt", "@nuxt/eslint"],
   shadcn: {
     prefix: "",
