@@ -1,13 +1,11 @@
 import withNuxt from "./.nuxt/eslint.config.mjs";
-import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
-import eslintPluginTailwind from "eslint-plugin-tailwindcss";
+import eslintConfigPrettier from "eslint-config-prettier/flat";
 
 export default withNuxt(
   {
     ignores: ["**/components.d.ts"],
   },
-  eslintPluginPrettierRecommended,
-  eslintPluginTailwind.configs["flat/recommended"],
+  eslintConfigPrettier,
   {
     files: ["**/*.ts", "**/*.vue"],
     languageOptions: {
@@ -24,7 +22,6 @@ export default withNuxt(
           // cssFiles: ["**/*.css", "!**/node_modules", "!**/.*", "!**/dist", "!**/build"],
           config: "./tailwind.config.js",
           classRegex: "class$",
-          whitelist: ["flex-center", "flex-col-center", "flex-justify-between"],
         },
       ],
       "tailwindcss/no-unnecessary-arbitrary-value": "warn",

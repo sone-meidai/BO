@@ -12,7 +12,7 @@ export default defineNuxtConfig({
 
   modules: ["shadcn-nuxt", "@nuxt/eslint"],
   shadcn: {
-    prefix: '',
-    componentDir: './components/ui'
-  }
+    prefix: "",
+    componentDir: "./components/ui",
+  },
 });

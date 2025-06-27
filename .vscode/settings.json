@@ -1,6 +1,4 @@
 {
-    "eslint.useFlatConfig": true,
-    "cSpell.words": [
-        "shadcn"
-    ]
+  "eslint.useFlatConfig": true,
+  "cSpell.words": ["callees", "nuxt", "shadcn"]
 }
